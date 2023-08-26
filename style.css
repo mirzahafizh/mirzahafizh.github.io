@@ -1,0 +1,401 @@
+*{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background: black;
+    position: fixed;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center ;
+}
+
+nav ul {
+    margin: 10px;
+    list-style: none;
+    display: flex; /* Menggunakan tampilan fleksibel */
+}
+
+nav ul li {
+    margin-right: 10px; /* Memberikan jarak antar elemen <li> */
+    display: inline; /* Menggunakan tampilan fleksibel */
+    align-items: center; /* Mengatur vertikal tengah */
+}
+
+nav ul li.image-item {
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+nav ul li a {
+    text-decoration: none; /* Menghilangkan dekorasi link */
+    color: white; /* Warna teks link */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+nav ul li img {
+    width: 40px;
+}
+
+
+nav ul li a:hover{
+    color: white;
+    background-color: gray;
+}
+
+
+footer{
+    width: 100%;
+    height: 240px;
+    background: blueviolet;
+    color: white;
+
+
+}
+
+.column-container {
+    display: flex; /* Menggunakan tampilan fleksibel untuk membuat kolom */
+    justify-content: space-between; /* Membuat ruang antara kolom secara merata */
+}
+
+.column {
+    flex: 1; /* Setiap kolom akan membagi lebar secara merata */
+    padding: 10px;
+
+
+}
+
+footer h3{
+    color: white;
+}
+footer img{
+    width: 200px;
+    justify-content: left;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    }
+    
+    @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    }
+
+
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+    }
+    
+    .center-container h1 {
+        margin: 20px; /* Menghapus margin bawaan h1 */
+    }
+    
+    .center-container img {
+        width: 480px; 
+    }
+
+
+
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Mengatur ruang antara judul dan gambar */
+        height: 350px;
+        margin-top: 30px;
+
+    }
+    
+    .title {
+        flex: 1; /* Menggunakan sisa lebar fleksibel */
+        margin-right: 20px; /* Berikan ruang antara judul dan gambar */
+    }
+    
+    .about img {
+        margin: 20px;
+        max-width: 50%;
+        box-shadow: 0px 10px 20px black; /* Adjusting shadow values */
+        
+    }
+    
+    .title h1 {
+        margin: 5px 60px 0;
+        margin-bottom: 10px; /* Berikan ruang antara judul dan paragraf */
+        display: inline;
+        border-bottom: 5px solid orange; /* Menambahkan garis bawah dengan ketebalan dan warna tertentu */
+        color: rgba(6, 15, 66);
+        font-size: 25px;
+    }
+
+
+    
+    .title p {
+        margin: 5px 60px 0;
+        text-align: justify;
+    }
+    
+
+    .centered-content {
+        text-align: center; /* Menyatukan konten di tengah */
+        margin-bottom: 20px; /* Berikan ruang antara setiap blok konten */
+        margin: 10px;
+    }
+    
+    .centered-content h1 {
+        font-size: 30px;
+        margin-bottom: 10px; /* Berikan ruang antara judul dan paragraf */
+        display: inline;
+        border-bottom: 5px solid orange; /* Menambahkan garis bawah dengan ketebalan dan warna tertentu */
+    }
+    
+    .centered-content p {
+        text-align: center; /* Rata kiri dan kanan */
+    }
+    
+
+    .container {
+        display: flex; /* Menggunakan tampilan fleksibel */
+    }
+    
+    main {
+        flex: 2; /* Bagian utama akan memiliki lebar 2x dari aside */
+        padding: 20px; /* Berikan ruang di sekitar konten */
+    }
+    
+    aside {
+        flex: 1; /* Bagian aside akan memiliki lebar 1x */
+        padding: 10px; /* Berikan ruang di sekitar konten */
+    }
+
+    aside img{
+        width: 480px;
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px black; /* Adjusting shadow values */
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+    
+    /* Style lainnya seperti di contoh sebelumnya */
+    .centered-content {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .centered-content h2 {
+        margin-bottom: 10px;
+    }
+    
+    .centered-content p {
+        text-align: justify;
+    }
+    
+
+    .sambutan {
+        display: flex;
+        align-items: center; /* Mengatur elemen secara vertikal ke tengah */
+        margin-bottom: 20px; /* Berikan ruang di bawah konten */
+        border: 5px solid #ccc; /* Menambahkan border */
+        padding: 20px; /* Berikan ruang di sekitar konten */
+        margin: 100px;
+        background-color: rgb(14, 20, 54);
+        color: white;
+    }
+    
+    .sambutan-content {
+        display: flex; /* Menggunakan tampilan fleksibel untuk konten dalam sambutan */
+        align-items: center; /* Mengatur konten di tengah secara vertikal */
+    }
+    
+    .sambutan img {
+        width: 200px; /* Atur ukuran maksimum gambar */
+        box-shadow: 0px 10px 20px black; /* Adjusting shadow values */
+    }
+    
+    .samutan-title {
+        display: flex;
+        flex-direction: column; /* Konten judul dan teks bergabung menjadi satu kolom */
+    }
+    
+    .samutan-title h1{
+        margin: 5px 40px 0;
+        /* Hapus margin bawaan dari elemen judul dan teks */
+        border-bottom: 5px solid orange; /* Menambahkan garis bawah dengan warna hitam (#000) */
+        display: inline-block; /* Membuat elemen menjadi blok tapi hanya menempati ruang yang dibutuhkan */
+        padding-bottom: 5px; /* Memberikan jarak antara teks dan garis bawah */
+    }
+    .samutan-title h3,
+    .samutan-title p {
+        margin: 5px 40px 0;
+        /* Hapus margin bawaan dari elemen judul dan teks */
+        text-align: justify;
+    }
+    
+    .cta-button-container {
+        display: flex;
+        justify-content: center; /* Mengatur tombol ke tengah secara horizontal */
+        text-align: center;
+    }
+    
+    .cta-button {
+        background-color: orange;
+        color: #FFF;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 250px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        
+}
+
+    .cta-button:hover {
+        background-color: #0056b3;
+    }
+    
+
+.tugas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Mengatur ruang antara judul dan gambar */
+    height: 800px;
+}
+
+.tugas img {
+    width: 480px;
+    height: 640px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px black; /* Adjusting shadow values */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.title-tugas {
+    text-align: center; /* Mengatur judul di tengah secara horizontal */
+    margin: 20px;
+}
+.title-tugas h1 {
+    margin: 20px 40px 0;
+    color: rgba(6, 15, 66);
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 5px solid orange; /* Menambahkan garis bawah dengan warna hitam (#000) */
+    display: inline-block; /* Membuat elemen menjadi blok tapi hanya menempati ruang yang dibutuhkan */
+    padding-bottom: 5px; /* Memberikan jarak antara teks dan garis bawah */
+}
+
+.title-tugas p{
+    margin: 20px 40px 0;
+    text-align: justify;
+    color: rgba(6, 15, 66);
+}
+
+.title-tugas li{
+    margin: 5px 40px 0;
+    text-align: justify;
+    color: rgba(6, 15, 66);
+}
+
+
+.sambutan-lanjutan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Mengatur ruang antara judul dan gambar */
+    height: 750px;
+    margin-top: 30px;
+
+}
+
+.sambutan-title {
+    flex: 1; /* Menggunakan sisa lebar fleksibel */
+    margin-right: 20px; /* Berikan ruang antara judul dan gambar */
+}
+
+.sambutan-lanjutan img {
+    margin: 20px;
+    width: 480px;
+    box-shadow: 0px 10px 20px black; /* Adjusting shadow values */
+    
+}
+
+.sambutan-title h1 {
+    margin: 5px 60px 0;
+    margin-bottom: 10px; /* Berikan ruang antara judul dan paragraf */
+    display: inline;
+    border-bottom: 5px solid orange; /* Menambahkan garis bawah dengan ketebalan dan warna tertentu */
+    color: rgba(6, 15, 66);
+    font-size: 25px;
+}
+
+.sambutan-title p {
+    margin: 5px 60px 0;
+    text-align: justify;
+}
+
