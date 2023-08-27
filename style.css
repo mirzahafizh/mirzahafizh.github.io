@@ -507,41 +507,54 @@ nav ul li a:hover {
     
 
 
-.sambutan-lanjutan {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Mengatur ruang antara judul dan gambar */
-    height: 750px;
-    margin-top: 30px;
-
-}
-
-.sambutan-title {
-    flex: 1; /* Menggunakan sisa lebar fleksibel */
-    margin-right: 20px; /* Berikan ruang antara judul dan gambar */
-}
-
-.sambutan-lanjutan img {
-    margin: 20px;
-    width: 480px;
-    box-shadow: 0px 10px 20px black; /* Adjusting shadow values */
+    #sambutan-lanjutan {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
     
-}
-
-.sambutan-title h1 {
-    margin: 5px 60px 0;
-    margin-bottom: 10px; /* Berikan ruang antara judul dan paragraf */
-    display: inline;
-    border-bottom: 5px solid orange; /* Menambahkan garis bawah dengan ketebalan dan warna tertentu */
-    color: rgba(6, 15, 66);
-    font-size: 25px;
-}
-
-.sambutan-title p {
-    margin: 5px 60px 0;
-    text-align: justify;
-}
-
+    #sambutan-lanjutan img {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        margin-right: 20px; /* Jarak antara gambar dan teks */
+        border-radius: 10px;
+    }
+    
+    .sambutan-title {
+        flex: 1;
+        color: rgba(6, 15, 66);
+        line-height: 1.6;
+    }
+    
+    .sambutan-title h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .sambutan-title p {
+        margin-top: 10px;
+    }
+    
+    /* Media Query untuk Responsif */
+    @media screen and (max-width: 768px) {
+        #sambutan-lanjutan {
+            padding: 10px;
+            flex-direction: column; /* Tampilan kolom pada perangkat kecil */
+        }
+    
+        #sambutan-lanjutan img {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    
+        .sambutan-title {
+            font-size: 16px;
+            text-align: center; /* Teks ditengah pada perangkat kecil */
+        }
+    }
+    
+    
 
 
 
